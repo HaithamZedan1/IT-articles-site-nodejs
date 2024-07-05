@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add new user</title>
+    </head>
+    <body style=" background-color: yellow;">
+        <h1> Add new article </h1>
+        <div><a href="/">Return home</a></div>
+        <form action="/add_handler" method="post">
+            <div>
+                <br>
+                <label for="title">Title<pre style="display: inline; color: red;">*</pre>:<pre style="display: inline;">        </pre></label>
+                <input type="text" id="title" name="title" size="19" required/>
+            </div>
+            <div>
+                <br>
+                <label for="authers">Authers<pre style="display: inline; color: red;">*</pre>:<pre style="display: inline;">     </pre></label>
+                <textarea id="authers" name="authers" required></textarea>
+            </div>
+            <div>
+                <br>
+                <label for="abstract">Abstract<pre style="display: inline; color: red;">*</pre>: <pre style="display: inline;">    </pre></label>
+                <textarea id="abstract" name="abstract" required></textarea>
+            </div>
+           
+            <div>
+                <br>
+                <label for="link">link:<pre style="display: inline;">          </pre></label>
+                <input type="text" id="link" size="19" name="link"/>
+            </div>
+            <div>
+                <br>
+                <label for="authentication">Authentication<br>Code<pre style="display: inline; color: red;">*</pre>:<pre style="display: inline;">        </pre></label>
+                <input type="password" id="authentication" size="19" name="authentication" required/>
+            </div>
+            <div>
+                <br>
+                <input type="submit" value="Add" />
+            </div>
+        </form>
+    </body>
+</html>
